@@ -1,0 +1,95 @@
+<div id="content-plugin">
+  <ul id="menu">
+    <li><a href="#publications" onclick="displayElem('publications'); return false;" style="font-size:18px; text-decoration: none;">Publications</a></li>
+    <li><a href="#filtres" onclick="return false;" style="font-size:18px; text-decoration: none; cursor:default;">Métadonnées</a>
+      <ul id="filtres">
+        <li><a href="#keywords" onclick="displayElem('keywords'); return false;" style="margin:1px; text-decoration: none;">Mots-clefs</a></li>
+        <li><a href="#auteurs" onclick="displayElem('auteurs'); return false;" style="margin:1px; text-decoration: none;">Auteurs</a></li>
+        <li><a href="#revues" onclick="displayElem('revues'); return false;" style="margin:1px; text-decoration: none;">Revues</a></li>
+        <li><a href="#annees" onclick="displayElem('annees'); return false;" style="margin:1px; text-decoration: none;">Année de production</a></li>
+        <li><a href="#insts" onclick="displayElem('insts'); return false;" style="margin:1px; text-decoration: none;">Institutions</a></li>
+      </ul>
+    </li>
+  </ul>
+  <br>
+  <hr>
+  <div id="meta">
+    <div class="display" id="contact" style="display: none;">
+        <h3>Contact</h3>
+        <ul style="list-style-type: none;"></ul>
+      </div>
+      <div class="display" id="disciplines" style="display: none;">
+          <h3>Disciplines</h3>
+          <div id="listdisci">
+            <span id="tridisciplines">
+              <button type="button" class="trial" href="" id="tridisci" onclick="toggleSort(this, true, 'discipline', 'discipline', 'tridisci'); return false;" style="font-size:16px;  text-decoration: none;">Tri Alphabétique</button>
+              <button type="button" class="trioc" href="" id="trinbdisci" onclick="toggleSort(this, false, 'discipline', 'discipline', 'trinbdisci'); return false;" style="font-size:16px;  text-decoration: none;">Tri Occurrence</button>
+            </span>
+            <ul id="discipline" class="discipline">
+              <!-- TODO lister les disciplines -->
+
+            </ul>
+          </div>
+          <div id="graph" style="display:none;">
+            <div id="piedisci">
+            </div>
+          </div>
+          <button type="button" href="" style="text-decoration: none;" id="disci" onclick="visibilitedisci('listdisci','graph','tridisciplines'); return false;">Graphique</button>
+        </div>
+      <div class="display" id="keywords" style="display: none;">
+          <h3>Mots-clefs</h3>
+          <div id="keys">
+            <!-- Lister les mot-clés -->
+
+          </div>
+          <div id="keysuite" style="display:none;">
+            <span id="trikeywords">
+              <button type="button" class="trial" href="" id="trikey" onclick="toggleSort(this, true, 'keyw', 'keyword', 'trikey'); return false;" style="font-size:16px;  text-decoration: none;">Tri Alphabétique</button>
+              <button type="button" class="trioc" href="" id="trinbkey" onclick="toggleSort(this, false, 'keyw', 'keyword', 'trinbkey'); return false;" style="font-size:16px;  text-decoration: none;">Tri Occurrence</button>
+            </span>
+            <ul class="keyword">
+              <div id="keyw">
+                <!-- Lister les mots-clés -->
+
+              </div>
+            </ul>
+          </div>
+          <button type="button" href="" style="text-decoration: none;" id="key" onclick="visibilitekey('keys','keysuite', 'trikeywords'); return false;">Liste complète</button>
+      </div>
+      <div class="display" id="auteurs" style="display: none;">
+          <h3>Auteurs</h3>
+          <ul class="auteurs" style="list-style-type: none;">
+            <span id="triauteurs">
+              <button type="button" class="trial" href="" id="triaut" onclick="toggleSort(this, true, 'aut', 'auteursuite', 'triaut'); return false;" style="font-size:16px;  text-decoration: none;">Tri Alphabétique</button>
+              <button type="button" class="trioc" href="" id="trinbaut" onclick="toggleSort(this, false, 'aut', 'auteursuite', 'trinbaut'); return false;" style="font-size:16px;  text-decoration: none;">Tri Occurrence</button>
+            </span>
+            <div id="aut">
+              <!-- Liste des auteurs -->
+
+              <div id="auteursuite" style="display:none;">
+              </div>
+            </div>
+          </ul>
+      </div>
+      <div class="display" id="annees" style="display: none;">
+          <h3>Année de production</h3>
+          <span id="triannees">
+          <button type="button" class="trial" href="" id="trian" onclick="toggleSort(this, true, 'an', 'annees', 'trian'); return false;" style="font-size:16px;  text-decoration: none;">Tri Alphabétique</button>
+          <button type="button" class="trioc" href="" id="trinban" onclick="toggleSort(this, false, 'an', 'annees', 'trinban'); return false;" style="font-size:16px;  text-decoration: none;">Tri Occurrence</button>
+        </span>
+        <ul class="annees">
+          <div id="an">
+            <li class="metadata" data-percentage="2"><a href="https://hal.archives-ouvertes.fr/search/index/?q=producedDateY_i:2015+AND+collCode_s:ENJEUX" target="_blank">2015</a><span class="nbmetadata">2</span></li>
+            <li class="metadata" data-percentage="1"><a href="https://hal.archives-ouvertes.fr/search/index/?q=producedDateY_i:2014+AND+collCode_s:ENJEUX" target="_blank">2014</a><span class="nbmetadata">1</span></li>
+            <div id="anneesuite" style="display:none;">
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="display" id="publications">
+           <ul id ='liste-publis' style="list-style-type: none;">
+              <!-- Liste des public classées par type -->
+
+           </ul>
+      </div>
+</div>
