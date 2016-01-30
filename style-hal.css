@@ -1,0 +1,152 @@
+#keys {
+    text-align : justify;
+    word-wrap: break-word;
+}
+
+#keys a{
+    text-decoration:none;
+    white-space: nowrap;
+}
+
+#aut{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#discipline{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#keyw{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#rev{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#an{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#institu{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#labo{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#dpt{
+    max-height : 500px;
+    overflow: auto;
+}
+
+#rteam{
+    max-height : 500px;
+    overflow: auto;
+}
+
+.grp-content{
+    max-height : 250px;
+    overflow: auto;
+}
+
+
+ul.discipline li{
+    list-style: none !important;
+}
+
+#menu, #menu ul{
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+}
+
+
+#menu li {
+    display: inline-block;
+    padding-right: 10px;
+}
+#menu li ul {
+    padding: 8px 8px 8px 16px;
+    background: #fff;
+    border : 1px solid #BEBEBE;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu a {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    display: block;
+}
+#menu ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    width: 450px;
+    padding: 5px;
+}
+#menu li:hover ul {
+    left: auto;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px;
+}
+
+.pagination a, .pagination li {
+    background: #fff;
+    display: inline-block;
+    padding: 4px 8px;
+    border-bottom: none !important;
+    text-decoration: none !important;
+    line-height: 1.5em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.pagination .disabled {
+    pointer-events: none;
+}
+
+.pagination a:hover {
+    background-color: #BEBEBE;
+    color: #fff;
+}
+
+.pagination .active a{
+    background: #BEBEBE;
+}
+
+div button{
+    margin : 5px;
+}
+
+.nbmetadata {
+    background-color: #BEBEBE;
+    color: #fff;
+    margin-left : 2px;
+    padding: 0px 4px 2px 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.li-widget {
+    padding-bottom : 5px;
+}
+
+.ul-widget {
+
+}
